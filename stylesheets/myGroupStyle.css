@@ -1,0 +1,71 @@
+/* this is my little style file */
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	background-color: #889093;
+	color: #FFFFFF;
+}
+img{
+	max-width: 50%;
+}
+h1{
+	text-align: center;
+}
+h1,h2,h3,h4,h5,h6{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+header{
+
+}
+p{
+	display: block;
+}
+section{
+	padding:2em;
+}
+ul, ol{
+	margin: 1em 0 1em 0;
+}
+li{
+	margin-left: 2em;
+}
+strong{
+	font-weight: bold;
+	color: #ff0000;
+	font-size: 2.5em;
+}
+footer{
+	padding: .75em;
+	clear:both;
+	background-color: #000000;
+}
+address{
+	padding: .2em;
+}
+.center{
+	text-align: center;
+}
+#about1{
+
+}
+#about2{
+
+}
+#mainsect1{
+	background-color: #338833;
+}
+#mainsect2{
+	
+	background-color: #3333FF;
+}
+#showcase{
+	background-color:#889093;
+	background-image: url(images/showcase.jpeg);
+	background-size: cover;
+	height: 100vh;
+	padding: 30vh 2% 2% 2%;;
+}
