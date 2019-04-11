@@ -1,0 +1,182 @@
+/*.BLK BIZ {
+text-align: center;
+font-family:Verdana, Tahoma, Helvetica, sans-serif;
+margin-left:auto;
+margin-right:auto;
+width:55%;
+padding:22.8px;
+}*/
+
+  body {
+   /* background-image: url("images/website_background2.jpeg");*/
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+  .nav_container {
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+}
+
+  .nav_container a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: gray;
+    background-color: rgb(0, 0, 0);
+}  
+
+  .nav_container a:hover {
+    background-color:red;
+}
+
+  #drop_container {
+    display: inline-block;
+}
+  .nav_container #drop_container #dropbtn {
+    font-size: 14px;  
+    border: none;
+    outline: none;
+    padding: 14px;
+    background-color: black;
+    color: gray;
+}
+  #drop_container:hover {
+    background-color: red;
+}
+  #dropbtn:hover {
+    background-color: red !important;  /* used important to force backgound color since the above class had it*/
+}
+   
+  #drop_links {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+  #drop_links a {
+    color: gray;
+    padding: 12px;
+    display: block;
+}
+  
+  #drop_links a:hover {
+    background-color: #f00;
+    cursor: crosshair;
+}
+  
+  #drop_container:hover #drop_links {
+    display: block;
+}
+
+  footer {
+      color: white;
+      background-color: black;
+      padding: 20px;
+      margin: 0;
+      text-align: center;
+}
+
+  #HomePageGreeting {
+    position: absolute;
+    right: 35%
+  }
+
+ .image1 {
+     position: relative;
+}
+
+  .borderclass {
+     border: solid;
+     margin: 1px;
+     width: 50%;
+}
+
+ .hook {
+     color: white;
+     background-color: black;
+     padding: 20px;
+     margin: 0;
+    /* margin: 1px;*/
+}
+
+.image1 img {
+    width: 100%;
+    /*height: auto;*/
+}
+
+.borderclass {
+    border: 1px solid;
+    width: 50%;
+}
+
+#box1 {
+    width: 20%;
+    float: left;
+    height: 600px;
+}
+
+#box2 {
+    width: 20%;
+    height: 600px;
+    
+}
+#something {
+    border:solid;
+}
+
+#asidesect2 p {
+text-align: center;
+}
+
+#tableSection {
+    margin: 0;
+    padding: 1px;
+}
+
+#mainsect1 {
+    margin: 0;
+    padding: 1px;
+    background-color: black;
+    color: white;
+}
+
+table{
+    height: 100%;
+    width: 50%;
+    border: solid .1em pink;
+    border-collapse: collapse;
+}
+
+td,th{
+    border: solid;
+}
+
+.ContactUS{
+    background-color: black;
+    margin: 0;
+    padding: 1px;
+    text-align: center;
+    color: white;
+}
+
+.ContactUS li {
+    text-align: left;
+}
+@media screen and (max-width: 600px) {
+    .nav_container a {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav_container a {
+      float: none;
+      display: block;
+    }
+  }
