@@ -7,10 +7,14 @@ width:55%;
 padding:22.8px;
 }*/
 
+html{
+    height: 100%;
+}
   body {
    /* background-image: url("images/website_background2.jpeg");*/
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain;    
+    
 }
 
   .nav_container {
@@ -73,18 +77,42 @@ padding:22.8px;
     display: block;
 }
 
-  footer {
-      color: white;
-      background-color: black;
+  .footer {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      color: black;
+      background-color: white;
+      padding: 20px;
+      margin: 0;
+      text-align: center;
+}
+
+  .footer2 {
+      position: absolute;
+      width: 100%;
+      bottom: auto;
+      left: 0;
+      color: black;
+      background-color: white;
       padding: 20px;
       margin: 0;
       text-align: center;
 }
 
   #HomePageGreeting {
-    position: absolute;
-    right: 35%
+    text-align: center;
+    //right: 35%
   }
+
+#BusinessAd1{
+    color: red;
+}
+  
+ #mission{
+  text-align: center;
+}
 
  .image1 {
      position: relative;
@@ -97,10 +125,11 @@ padding:22.8px;
 }
 
  .hook {
-     color: white;
-     background-color: black;
+     color: black;
+     background-color: white;
      padding: 20px;
      margin: 0;
+     text-align: center;
     /* margin: 1px;*/
 }
 
@@ -131,18 +160,22 @@ padding:22.8px;
 
 #asidesect2 p {
 text-align: center;
+color: white;
+background-color: black;
 }
 
 #tableSection {
     margin: 0;
     padding: 1px;
+    background-color: white;
+    color: black;
 }
 
 #mainsect1 {
     margin: 0;
     padding: 1px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 table{
@@ -165,7 +198,8 @@ td,th{
 }
 
 .ContactUS li {
-    text-align: left;
+    text-align: center;
+    margin-left: auto;
 }
 @media screen and (max-width: 600px) {
     .nav_container a {
