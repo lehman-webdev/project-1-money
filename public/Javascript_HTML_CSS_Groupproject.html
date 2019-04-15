@@ -28,21 +28,17 @@ function ifErrorInForm() {
       return false;
     }
     /* toggle my nav */
-
 function toggleNav(){
   var nav = document.getElementById("nav");
   nav.classList.toggle("navtoggle");
 }
 </script>
-
-
 <!--Media Query-->
 <style>
 body {
     background-color: #FFFFFF;
     color: black;
 }
-
 /* On screens that are 992px wide or less, the background color is blue */
 @media screen and (max-width: 992px) {
     body {
@@ -50,7 +46,6 @@ body {
         color: white;
     }
 }
-
 /* On screens that are 600px wide or less, the background color is olive */
 @media screen and (max-width: 600px) {
     body {
@@ -59,24 +54,18 @@ body {
     }
 }
 </style>
-
 </head>
-
-
 <body>
     <main>
   <!-- Load an icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <div class="navbar">
   <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
   <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
   <a href="#ContactForm"><i class="fa fa-fw fa-envelope" target= "_blank"></i> Contact</a> 
   <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
 </div>
-
 <h1>ImPryceless &amp; Company</h1>
-
 <div class="navigationbar"> 
 <ul>
  <li> <a href="#WhatsNew">WHAT'S NEW</a></li>
@@ -88,18 +77,15 @@ body {
  <li> <a href="#Email">EMAIL</a></li>
 </ul>
 </div> 
-
   
 <div class="floatingtext">ImPrycelessInc Kloset</div>
     
 <div class="mainimagedisplay">
-    <img src="finalimages/blkbizmainpic3.jpg"></div>
-
+   </div>
         
 <div class="mymainpic">
  <!-- <img src="finalimages/afro.jpg">-->
 </div>
-
 <div class="Biography">
   <h2><strong>Biography</strong></h2>
 </div>        
@@ -123,7 +109,6 @@ body {
         <img src="images/swimwear.jpg"><ol>Swim Wear</ol></div>
  </div>    
     
-
    <section id="tableSection">
     <p><strong>Site Wide Sale Items:</strong></p>
     <table>
@@ -161,79 +146,57 @@ body {
         
     </table>
 </section> 
-
 <section id="video">
     
 <p><strong>And! People say in Fashion you don't get Paid!!!!!</strong></p>
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qurBknnG5Ts" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 </section>
 <!--<div class="image7">
-        <img src="images/fringedress.jpg"><ol>Famous Fringe Strappy Bandage Dress</ol></div>
+        <img src="finalimages/fringedress.jpg"><ol>Famous Fringe Strappy Bandage Dress</ol></div>
     <div class="image8">
-        <img src="images/jeweledheel.jpg"><ol>All My X's Strappy Jeweled Caged Heels</ol></div>
+        <img src="finalimages/jeweledheel.jpg"><ol>All My X's Strappy Jeweled Caged Heels</ol></div>
     <div class="image9">
-        <img src="images/flowerclutch.jpg"><ol>Fancy Flowered Clutch</ol></div>
+        <img src="finalimages/flowerclutch.jpg"><ol>Fancy Flowered Clutch</ol></div>
     <div class="image10">
-        <img src="images/casualwear.jpg"><ol>Casual Wear</ol></div>
+        <img src="finalimages/casualwear.jpg"><ol>Casual Wear</ol></div>
     <div class="image11">
-        <img src="images/sportywear.jpg"><ol>Sporty Wear</ol></div>   -->
+        <img src="finalimages/sportywear.jpg"><ol>Sporty Wear</ol></div>   -->
         
 <!--<div class="comments">
   <h3>Comments:</h3>
 </div> --> 
-
 <!--Contact Form-->
 <div class="ContactForm">
   <h4><strong>Contact Form:</strong></h4>
 </div>  
 <div class="container">
-    <form name="commentForm" action="action_page.php" onsubmit="return ifErrorInForm()" method="post">
-          
+  <form name="commentForm" action="action_page.php" onsubmit="return ifErrorInForm()" method="post">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-
     <input type="Submit" value="Submit">
-
   </form>
 </div>      
-
 <div class="Email">
   <h4><strong>Email Us:</strong></h4>
 </div> 
-<div class="email" >
-    <a href = "mailto:imprycelessinc@yahoo.com"> imprycelessinc@yahoo.com </a></div> 
-
+<div class="email"> <a id ="Email" href="mailto:imprycelessinc@yahoo.com"> imprycelessinc@yahoo.com </a></div> 
   <section id="asidesect2">
     <p>
       <a href="#">Go back to Top</a>
     </p>
   </section>
-
 </main>
-
 <footer class="center">
  <a href = "#MY ACCOUNT">MY ACCOUNT</a> <a href="#ABOUT US">ABOUT US</a> <a href="#RETURNS">RETURNS</a> <a href="#SHIPPING POLICY">SHIPPING POLICY</a> <a href="#PRIVACY POLICY">PRIVACY POLICY</a> <a href="#TERMS & CONDITIONS">TERMS &amp; CONDITIONS</a> <a href="#CONTACT">CONTACT</a> 
   <address>
     121 Bronx River
-   <br />
+<br />
     Bronx, NY 10466
   </address>
 </footer>  
-
 </body>
 </html>
