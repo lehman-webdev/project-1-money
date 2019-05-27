@@ -28,6 +28,10 @@
                 <p>BlackBu1snesses@hotmail.com</p>
                 <p>Telephone Number: 555-123-2344</p>
                 <p>Fax: 1-555-Fax-Buis</p>
+                
+               <div class ="black1">
+                    <img src="../assets/black1.jpeg" alt="Wrong image name/location" width="30%" height="30%" />
+        </div>
            
             <footer class = "footer2">
                 Copyright&copy; by BlkBiz inc. All rights reserved.

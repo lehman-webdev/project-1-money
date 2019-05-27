@@ -25,11 +25,12 @@
             
         <section id="tableSection">
 
-            <h2>Featured Businesses:</h2>
-            <p><strong id="BusinessAd1">Site wide sale at IamPryceless &amp; Company:</strong> 
+            <h2>Featured Business of the Day!</h2>
+            <p><strong id="BusinessAd1">Qunnections Management Group, LLC</strong> 
                 <br />
-                Click <a href="Javascript_HTML_CSS_Groupproject.html">here</a> to view website with more deals!
+                Click <a href="http://www.qmgconstruction.com/" target="_blank">here</a> to view website.
             </p>
+            <p> To see our full list of businesses,  Click <a href="businesses">here</a></p>
             <hr  />
             
             </section>
@@ -43,18 +44,19 @@
 
             <section id="asidesect2">
               <p>
-                  To learn more, go to our <a href="aboutus.html">about us</a> page to get the story behind the movement. 
-                  If you would like to contact, visit our <a href="contact.html">contact</a> page and reach out.
+                  To learn more, go to our <a href="aboutus">about us</a> page to get the story behind the movement. 
+                  If you would like to contact, visit our <a href="contactus">contact</a> page and reach out.
               </p>
             </section>
     
+             <a id = "topink" href="#">Go to Top</a>
+
             </div>
     
     </main>
       
     <footer class = "footer2">
         Copyright&copy; by BlkBiz inc. All rights reserved.
-         <a id = "topink" href="#">Go to Top</a>
     </footer>
 
     </body>
@@ -75,6 +77,8 @@ export default {
 h3 {
   margin: 40px 0 0;
 }
+
+
 ul {
   list-style-type: none;
   padding: 0;

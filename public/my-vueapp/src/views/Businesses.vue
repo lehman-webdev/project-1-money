@@ -1,7 +1,13 @@
 <template>
 <div class="businesses">
+
     <v-container class="container" id="app" grid-list-sm>
       <h3 class="text-center">Black Owned Businesses</h3>
+      <br>
+      <div class ="black2">
+                    <img src="../assets/black2.jpeg" alt="Wrong image name/location" width="30%" height="30%" />
+        </div>
+        <br>
         <v-layout>
       <v-flex class="columns medium-4" v-for="(result, index) in results" :key="index">
         <v-card class="card">
@@ -17,7 +23,6 @@
           </v-card>
         </v-card>
         <br>
-        <br>
       </v-flex>
         </v-layout>
     </v-container>
@@ -29,6 +34,10 @@
 </template>
 <style>
 
+h3{
+color: white;
+}
+
 body{
 background-color: black;
 }
@@ -36,7 +45,9 @@ background-color: black;
 .card{
 border: 5px solid red;
 border-collapse: separate;
-border-spacing: 20px;
+border-spacing: 5px;
+background-color: gray;
+color:black;
 }
 
 

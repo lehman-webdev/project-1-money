@@ -7,7 +7,12 @@
         <div>
         
             <h1>About Us</h1>
-        
+       
+       <br>
+      <div class ="black2">
+                    <img src="../assets/black3.jpg" alt="Wrong image name/location" width="30%" height="30%" />
+        </div>
+        <br>
             
             <h3>We are a company that connects black owned businesses to consumers around the world.</h3>
        
