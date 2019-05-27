@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
+  <meta charset="utf-8">
+  <title>Black Owned Buisnesses</title>
+</head>
+
+  <body>
+    <div class="container" id="app">
+      <h3 class="text-center">Black Owned Businesses</h3>
+      <div class="columns medium-4" v-for="(result, index) in results">
+        <div class="card">
+          <div class="card-divider">
+            <p> {{ result.vendor_formal_name }}</p>
+          </div>
+          <div class="card-section">
+            <p> {{ result.business_description }}</p>
+          </div>
+          <div class="card-divider">
+            <p>Read more at: <a href ="#{{ result.website }}" target="_blank"> {{ result.website }}</a> or call {{ result.telephone}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="vueApp.js"></script>
+  </body>
+</html>

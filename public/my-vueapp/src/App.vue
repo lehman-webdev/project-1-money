@@ -1,0 +1,315 @@
+<template>
+  <div id="app">
+    <img src="@/assets/logo.1.png" alt="allBusiness Logo" width="310" height="125" />
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/AboutUs">About</router-link> |
+      <router-link to="/Businesses">Businesses</router-link> |
+      <router-link to="/ContactUs">Contact Us</router-link>
+    </div>
+    <router-view />
+  </div>
+</template>
+
+<script>
+
+  export default {
+    name: 'App',
+    components: {
+    },
+    data () {
+      return {
+      //
+      }
+    }
+  }
+</script>
+
+<style lang="scss">
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  //margin-top: 60px;
+  background: black;
+}
+.moveInUp-enter-active{
+  animation: fadeIn 2s ease-in;
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.moveInUp-leave-active{
+  animation: moveInUp .3s ease-in;
+}
+@keyframes moveInUp{
+ 0%{
+  transform: translateY(0);
+ }
+  100%{
+  transform: translateY(-400px);
+ }
+}
+#nav {
+  padding: 30px;
+  a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    //color: #2c3e50;
+    color: gray;
+    background-color: rgb(0, 0, 0);
+    &.router-link-exact-active {
+    // color: #42b983;
+    color:red;
+    }
+  }
+}
+html{
+    height: 100%;
+}
+  body {
+   /* background-image: url("images/website_background2.jpeg");*/
+    background-repeat: no-repeat;
+    background-size: contain;    
+    
+}
+
+  .nav_container {
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+}
+
+  .nav_container a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: gray;
+    background-color: rgb(0, 0, 0);
+}  
+
+  .nav_container a:hover {
+    background-color:red;
+}
+
+  #drop_container {
+    display: inline-block;
+}
+  .nav_container #drop_container #dropbtn {
+    font-size: 14px;  
+    border: none;
+    outline: none;
+    padding: 14px;
+    background-color: black;
+    color: gray;
+}
+  #drop_container:hover {
+    background-color: red;
+}
+  #dropbtn:hover {
+    background-color: red !important;  /* used important to force backgound color since the above class had it*/
+}
+   
+  #drop_links {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+  #drop_links a {
+    color: gray;
+    padding: 12px;
+    display: block;
+}
+  
+  #drop_links a:hover {
+    background-color: #f00;
+    cursor: crosshair;
+}
+  
+  #drop_container:hover #drop_links {
+    display: block;
+}
+
+  .footer {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      color: white;
+      background-color: black;
+      padding: 20px;
+      margin: 0;
+      text-align: center;
+      bottom: auto;
+}
+
+  .footer2 {
+      position: absolute;
+      width: 100%;
+      bottom: auto;
+      left: 0;
+      color: white;
+      background-color: black;
+      padding: 20px;
+      margin: 0;
+      text-align: center;
+}
+
+  #HomePageGreeting {
+    text-align: center;
+    //right: 35%
+  }
+
+#BusinessAd1{
+    color: red;
+}
+  
+ #mission{
+  text-align: center;
+}
+
+ .image1 {
+     position: relative;
+}
+
+  .borderclass {
+     border: solid;
+     margin: 1px;
+     width: 50%;
+}
+
+ .hook {
+     color: black;
+     background-color: white;
+     padding: 20px;
+     margin: 0;
+     text-align: center;
+    /* margin: 1px;*/
+}
+
+.image1 img {
+    position: relative;
+    width: auto;
+    /*height: auto;*/
+}
+
+.borderclass {
+    border: 1px solid;
+    width: 50%;
+}
+
+#box1 {
+    width: 20%;
+    float: left;
+    height: 600px;
+}
+
+#box2 {
+    width: 20%;
+    height: 600px;
+    
+}
+#something {
+    border:solid;
+}
+
+#asidesect2 p {
+text-align: center;
+color: white;
+background-color: black;
+}
+
+#tableSection {
+    margin: 0;
+    padding: 1px;
+    background-color: white;
+    color: black;
+}
+
+#mainsect1 {
+    margin: 0;
+    padding: 1px;
+    background-color: white;
+    color: black;
+}
+
+table{
+    height: 100%;
+    width: 50%;
+    border: solid .1em pink;
+    border-collapse: collapse;
+}
+
+td,th{
+    border: solid;
+}
+
+.ContactUS{
+    background-color: black;
+    margin: 0;
+    padding: 1px;
+    text-align: center;
+    color: white;
+}
+
+.ContactUS li {
+    text-align: center;
+    margin-left: auto;
+}
+@media screen and (max-width: 600px) {
+    .nav_container a {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav_container a {
+      float: none;
+      display: block;
+    }
+  }
+
+.img {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+  height: 140px;
+}
+
+/* Add a hover effect (blue shadow) */
+thumbimg:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#img{
+        display:inline-block;
+        *display:inline; /*IE7*/
+        *zoom:1; /*IE7*/
+        background:black;
+       // color:white;
+        margin-right:10px;
+}
+
+#toplink{
+    position: right;
+    
+}
+</style>
